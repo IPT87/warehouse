@@ -21,11 +21,16 @@ public class ProductController {
         return "productList";
     }
 
+    @GetMapping("/addProduct")
+    public String addProduct() {
+        return "addProduct";
+    }
+
     @PostMapping("/addProduct")
-    public String saveProduct(@RequestBody Product product) {
+    public String saveProduct(Product product) {
         service.save(product);
 
-        return "Added Successfully";
+        return "addProduct";
     }
 
     @DeleteMapping("/delete/{id}")

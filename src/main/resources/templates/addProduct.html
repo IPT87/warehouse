@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link href="/css/style.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <title>Add new product</title>
+</head>
+<body>
+<form class="form-style-9" action="#" th:action="@{/addProduct}" th:object="${product}" method="post">
+  <ul>
+    <li>
+      <input type="text" name="name" class="field-style field-split align-left" placeholder="Name" />
+      <input type="number" name="quantity" class="field-style field-split align-right" placeholder="Quantity" />
+
+    </li>
+    <li>
+      <input type="number" step="any" name="price" class="field-style field-split align-left" placeholder="Price" />
+      <select name="promotion" class="field-style field-split align-right" style="float:right;">
+        <option value="true" class="field-style field-split align-right">Yes</option>
+        <option value="false" class="field-style field-split align-right">No</option>
+      </select>
+    </li>
+    <li>
+      <textarea name="description" class="field-style" placeholder="Description"></textarea>
+    </li>
+    <li>
+      <input type="submit" value="Add Product" />
+    </li>
+  </ul>
+</form>
+<button type="button" th:onclick="|window.location.href='/products'|">Products list</button>
+</body>
+</html>
