@@ -1,5 +1,9 @@
-function showAlert() {
-    alert("The button was clicked!");
+function showDeletedAlert() {
+    alert("The product was deleted!");
+}
+
+function showAddedAlert() {
+    alert("The product was added!");
 }
 
 function deleteFunction(id) {

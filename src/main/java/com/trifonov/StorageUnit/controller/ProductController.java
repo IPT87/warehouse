@@ -37,6 +37,6 @@ public class ProductController {
     public String deleteProduct(@PathVariable String id) {
         service.deleteProduct(id);
 
-        return "productList";
+        return "redirect:/products";
     }
 }

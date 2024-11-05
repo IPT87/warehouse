@@ -1,5 +1,5 @@
 h1 {
-    font-family: sans-serif;
+    font-family: georgia;
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
@@ -18,7 +18,9 @@ h1 {
 
 #products tr:nth-child(even){background-color: #f2f2f2;}
 
-#products tr:hover {background-color: #ddd;}
+#products tr:nth-child(odd){background-color: #cac4c2;}
+
+#products tr:hover {background-color: #ddc;}
 
 #products th {
   padding-top: 12px;
@@ -90,7 +92,7 @@ h1 {
 	margin: 50px auto;
 	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
 	border-radius: 10px;
-	border: 6px solid #305A72;
+	border: 6px solid #39b9ba;
 }
 
 .form-style-9 ul {
@@ -149,7 +151,7 @@ h1 {
 	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
 	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
 	box-shadow: inset 0px 1px 0px 0px #3985B1;
-	background-color: #216288;
+	background-color: #496ac3;
 	border: 1px solid #17445E;
 	display: inline-block;
 	cursor: pointer;
@@ -163,4 +165,140 @@ h1 {
 .form-style-9 ul li input[type="submit"]:hover {
 	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
 	background-color: #28739E;
+}
+
+.backBtn {
+  background: linear-gradient(to bottom right, #22c1c3, #2d9afd);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.backBtn:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(34,193,195, 0.5), .125rem .125rem 1rem rgba(45,154,253, 0.5);
+}
+
+.backBtn:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(34,193,195, 0.5), .125rem .125rem 1rem rgba(45,154,253, 0.5);
+}
+
+#newProductBody {
+  background-image: url('../images/new-product.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#productsBody {
+  background-image: url('../images/warehouse.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#indexBody {
+  background-image: url('../images/warehouse-building.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Navigation bar style */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Footer style */
+.footer {
+  background:#282626;
+  padding:10px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer .row {
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+}
+
+.footer .row a {
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+}
+
+.footer .row a:hover {
+  color:#fff;
+}
+
+.footer .row ul {
+  width:100%;
+}
+
+.footer .row ul li {
+  display:inline-block;
+  margin:0px 20px;
+}
+
+.footer .row a i {
+  font-size:2em;
+  margin:0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+    text-align:left;
+    padding:4%;
+  }
+
+  .footer .row ul li {
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+  }
+
+  .footer .row a i {
+    margin:0% 3%;
+  }
 }

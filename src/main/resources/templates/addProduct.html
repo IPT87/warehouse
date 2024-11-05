@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>Add new product</title>
 </head>
-<body>
+<body id="newProductBody">
+<h1>Add new product</h1>
 <form class="form-style-9" action="#" th:action="@{/addProduct}" th:object="${product}" method="post">
   <ul>
     <li>
@@ -28,6 +29,6 @@
     </li>
   </ul>
 </form>
-<button type="button" th:onclick="|window.location.href='/products'|">Products list</button>
+<button type="button" class="backBtn" th:onclick="|window.location.href='/products'|">Products list</button>
 </body>
 </html>
