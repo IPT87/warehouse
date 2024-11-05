@@ -33,10 +33,10 @@ public class ProductController {
         return "addProduct";
     }
 
-    @DeleteMapping("/delete/{id}")
-    public String deleteProduct(@PathVariable int id) {
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
+    public String deleteProduct(@PathVariable String id) {
         service.deleteProduct(id);
 
-        return "Deleted Successfully";
+        return "productList";
     }
 }

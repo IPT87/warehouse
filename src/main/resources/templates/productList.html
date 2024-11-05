@@ -25,8 +25,8 @@
     <td th:text="${product.quantity}"></td>
     <td th:text="${product.promotion} ? 'YES' : 'NO'"></td>
     <td th:text="${product.promotion} ? ${#numbers.formatDecimal(product.price - product.price * 0.15, 0, 2)} + '€' : ${#numbers.formatDecimal(product.price, 0, 2)} + '€'"></td>
-    <td class="centerBtn"><button id="editBtn" th:onclick="|window.location.href='/'|">Edit</button></td>
-    <td class="centerBtn"><button id="deleteBtn">Delete</button></td>
+    <td class="centerBtn"><button id="editBtn">Edit</button></td>
+    <td class="centerBtn"><button id="deleteBtn" th:onclick="deleteFunction([[${product.id}]])">Delete</button></td>
   </tr>
   </tbody>
 </table>
